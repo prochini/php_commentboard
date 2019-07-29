@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+  }
+  html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+body{
+    background: #eeeeee;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family:"WenQuanYi Zen Hei","\u6587\u6cc9\u9a5b\u6b63\u9ed1","PingFang TC","PingFang SC","Heiti TC","\u9ed1\u9ad4\u002d\u7e41","LiHei Pro","\u5137\u9ed1\u0020\u0050\u0072\u006f","Droid Sans","Roboto","Microsoft JhengHei","\u5fae\u8edf\u6b63\u9ed1\u9ad4";
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30em;
+}
+nav{
+    background: #3b5998;
+    width: 100%;
+    height: 3em;
+    text-align: right;
+    line-height: 3em;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+
+}
+ul > li > a{
+    color:white;
+    text-decoration: none;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.reply{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: white;
+    margin: 5px 0;
+}
+h1{
+    font-size: 1.2em;
+    color: #3b5998;
+}
+.header{
+    background: #f3f4f7;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid lightgray;
+}
+.comment{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: white;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    line-height: 2em;
+}
+.sub_comment{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: white;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    line-height: 2em;
+}
+textarea{
+    margin: 1em;
+    width: 400px; 
+    height: 100px;
+    overflow:hidden;
+    resize:none;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline:none;
+}
+#updateContent{
+    border: 1px solid slateblue ;
+    width: 340px; 
+    height: 100px;
+}
+span{
+    font-size: 0.8em;
+    color: gray;
+}
+#save-btn{
+	font-weight: bold;
+    background: #3b5998;
+    padding: 4px 5px 3px;
+    color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	border:none;
+    outline: none;
+    width: 5em;
+    height: 2em;
+    font-family: inherit;
+    margin: 0.5em 1em;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    background: #f3f4f7;
+    border: 1px solid lightgray;
+}
+.child{
+    border: 1px solid lightgray;
+    width: 430px; 
+    height: 160px;
+}
+#content{
+    border: 1px solid gray ;
+    width: 380px; 
+    height: 100px;
+}
+.add_sub_commemt{
+    border: 1px solid lightgray;
+    width: 414px; 
+    height: 220px;
+    border-radius: 5px;
+}
+.own_comment{
+    background: #ebeef4;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    line-height: 2em;
+}
